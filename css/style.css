@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .disabled {
+  display: none;
+}
+body nav {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  width: 7%;
+}
+body nav ul .leftNavSection div {
+  font-size: 40px;
+}
+body nav ul .leftNavSection .logo {
+  font-weight: 700;
+}
+body nav ul .rightNavSection div {
+  font-size: 20px;
+  opacity: 0.6;
+}
+body nav ul .rightNavSection .navButton {
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body .container #product {
+  border: 1px solid black;
+  width: 50%;
+}
+body .container #product .title {
+  text-align: center;
+}
+body .container #product .colors {
+  text-align: center;
+}
+body .container #product .colors div {
+  display: inline-block;
+  padding: 10px;
+}
+body .container #product .deviceSpecsOption {
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+body .container #product .deviceSpecsOption .gearIcon {
+  width: 60%;
+  float: right;
+  color: #e00e4d;
+  font-size: 35px;
+}
+body .container #product .deviceSpecsOption .gearIcon :hover {
+  cursor: pointer;
+}
+body .container #product #deviceView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+body .container #product #deviceView .leftPane {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .container #product #deviceView .leftPane :hover {
+  cursor: pointer;
+}
+body .container #product #deviceView .leftPane .detailBox {
+  margin: 5px;
+  padding: 15px;
+  width: 100%;
+  background-color: lightgray;
+}
+body .container #product #deviceView .device {
+  z-index: 1;
+}
+body .container #product #deviceView .device .sphere {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container #product #deviceView .device .sphere div {
+  font-size: 200px;
+}
+body .container #product #deviceView .rightPane {
+  width: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .container #product #deviceView .rightPane :hover {
+  cursor: pointer;
+}
+body .container #product #deviceView .rightPane .detailBox {
+  margin: 5px 5px 5px -30px;
+  padding: 15px;
+  width: 100%;
+  background-color: lightgray;
+}
+body .container #product .viewMode {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+body .container #product .viewMode div {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container #product .viewMode div :hover {
+  cursor: pointer;
+}
+body .container #product .viewMode div div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+body .container #specifications {
+  border: 1px solid gray;
+  width: 50%;
+}
+body .container #specifications .infoSelect {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+body .container #specifications .infoSelect div {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+body .container #specifications .infoSelect div .infoBox {
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
