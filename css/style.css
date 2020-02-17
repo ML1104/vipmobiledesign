@@ -50,7 +50,7 @@ body nav ul .search {
   font-size: 30px;
   opacity: 0.6;
   float: right;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 body .container {
   display: flex;
@@ -60,7 +60,6 @@ body .container {
   width: 100%;
 }
 body .container #product {
-  border: 1px solid black;
   width: 50%;
 }
 body .container #product .title {
@@ -107,12 +106,15 @@ body .container #product #deviceView .leftPane :hover {
   cursor: pointer;
 }
 body .container #product #deviceView .leftPane .detailBox {
-  margin: 5px;
+  margin: 5px -30px 5px 5px;
   padding: 15px;
   width: 100%;
   background-color: lightgray;
   text-align: left;
   font-size: 12px;
+}
+body .container #product #deviceView .leftPane .detailBox div {
+  width: 100%;
 }
 body .container #product #deviceView .device {
   z-index: 1;
@@ -121,8 +123,8 @@ body .container #product #deviceView .device .sphere {
   background-color: white;
   border: 1px solid gray;
   padding: 100px;
-  width: 10vw;
-  height: 10vw;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -149,6 +151,9 @@ body .container #product #deviceView .rightPane .detailBox {
   font-size: 12px;
   text-align: right;
 }
+body .container #product #deviceView .rightPane .detailBox div {
+  width: 100%;
+}
 body .container #product .viewMode {
   width: 100%;
   display: flex;
@@ -172,7 +177,6 @@ body .container #product .viewMode div div {
   border-radius: 50%;
 }
 body .container #specifications {
-  border: 1px solid red;
   width: 50%;
   margin-top: 40px;
 }
@@ -200,11 +204,14 @@ body .container #specifications .infoSelect div .infoBox {
   border-radius: 5px;
   padding: 5px;
 }
+body .container #specifications .infoSelect div .infoBox a {
+  text-decoration: none;
+  color: inherit;
+}
 body .container #specifications .infoSelect div #characteristicsButton {
   color: #fd8700;
 }
 body .container #specifications #specificationsList {
-  border: 1px solid gray;
   text-align: center;
   width: 100%;
 }

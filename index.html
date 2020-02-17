@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <title>Mobile Design</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="navItems">
             <li class="dropdown">
                 <i class="fas fa-bars"></i>
             </li>
@@ -49,9 +50,13 @@
             <div id="deviceView">
                 <div class="leftPane">
                     <div class="detailBox" id="screenPrompt">Screen</div>
-                    <div class="detailBox disabled" id="screenDetails">6.8" /3340x1440</div>
+                    <div class="detailBox disabled" id="screenDetails">
+                        <div>6.8" /3340x1440</div>
+                    </div>
                     <div class="detailBox" id="cameraPrompt">Cameras</div>
-                    <div class="detailBox disabled" id="cameraDetails">12+12+16 MP / 10 MP</div>
+                    <div class="detailBox disabled" id="cameraDetails">
+                        <div>12+12+16 MP / 10 MP</div>
+                    </div>
                 </div>
 
                 <div class="device">
@@ -64,14 +69,18 @@
 
                 <div class="rightPane">
                     <div class="detailBox" id="memoryPrompt">Memory</div>
-                    <div class="detailBox disabled" id="memoryDetails">Up to 512 GB</div>
+                    <div class="detailBox disabled" id="memoryDetails">
+                        <div>Up to 512 GB</div>
+                    </div>
                     <div class="detailBox" id="platformPrompt">Platform</div>
-                    <div class="detailBox disabled" id="platformDetails">Octa-core / 12 GB</div>
+                    <div class="detailBox disabled" id="platformDetails">
+                        <div>Octa-core / 12 GB</div>
+                    </div>
                 </div>
             </div>
 
             <div class="viewMode">
-                <div>
+                <div class="modes">
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
@@ -82,12 +91,20 @@
         <div id="specifications">
             <div class="infoSelect">
                 <div>
-                    <div class="infoBox">About Device</div>
-                    <div class="infoBox">Pricing</div>
+                    <div class="infoBox">
+                        <a href="">About Device</a>
+                    </div>
+                    <div class="infoBox">
+                        <a href="">Pricing</a>
+                    </div>
                 </div>
                 <div>
-                    <div class="infoBox">Insurance</div>
-                    <div class="infoBox">Compare Device</div>
+                    <div class="infoBox">
+                        <a href="">Insurance</a>
+                    </div>
+                    <div class="infoBox">
+                        <a href="">Compare Device</a>
+                    </div>
                 </div>
                 <div>
                     <div class="infoBox" id="characteristicsButton">Characteristics</div>

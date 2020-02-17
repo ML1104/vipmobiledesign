@@ -1,0 +1,142 @@
+@media only screen and (max-width: 1400px) {
+  body .container #product #deviceView .device .sphere {
+    max-width: 10px;
+    max-height: 10px;
+  }
+
+  body .container #product #deviceView .leftPane .detailBox div {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  body .container #product #deviceView .device .sphere {
+    max-width: 10px;
+    max-height: 10px;
+    padding: 80px;
+  }
+
+  body .container #product #deviceView .rightPane .detailBox {
+    width: 110px;
+  }
+
+  body .container #product #deviceView .leftPane .detailBox {
+    width: 110px;
+  }
+
+  body .container #specifications .infoSelect div .infoBox a {
+    align-self: center;
+  }
+
+  body .container #specifications #specificationsList .specView .tab {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  body .container #product {
+    width: 100%;
+  }
+
+  body .container #product #deviceView .leftPane .detailBox {
+    width: 100%;
+  }
+
+  body .container #product #deviceView .device .sphere {
+    max-width: 80px;
+    max-height: 80px;
+    padding: 50px;
+  }
+
+  body .container #product #deviceView .device .sphere div {
+    font-size: 15vw;
+  }
+
+  body .container #specifications {
+    width: 100%;
+  }
+
+  body .container #specifications .infoSelect div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .container #product #deviceView .device .sphere div {
+    font-size: 30vw;
+  }
+
+  body .container #product #deviceView .leftPane {
+    width: 30%;
+  }
+
+  body .container #product #deviceView .leftPane .detailBox {
+    width: 100%;
+  }
+
+  body .container #product #deviceView .leftPane .detailBox div {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  body .container #product #deviceView .rightPane {
+    width: 30%;
+  }
+
+  body .container #product #deviceView .rightPane .detailBox {
+    width: 100%;
+  }
+
+  body .container #product #deviceView .rightPane .detailBox div {
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  body .container #product .viewMode .modes div {
+    width: 30px;
+    height: 30px;
+  }
+
+  body .container #specifications #specificationsList .specView .tab {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .navbar {
+    height: auto;
+  }
+
+  body .navbar .navItems li {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  body .navbar .navItems .search {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  body .navbar .navItems .navButton {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  body .navbar .navItems .dropdown {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  body .navbar .navItems .logo a {
+    font-size: 40px;
+  }
+
+  body .container #product .deviceSpecsOption .gearIcon {
+    font-size: 25px;
+  }
+
+  body .container #specifications #specificationsList .specView .tab {
+    width: 25%;
+  }
+}
