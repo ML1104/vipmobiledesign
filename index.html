@@ -13,18 +13,15 @@
 <body>
     <nav>
         <ul>
-            <li class="leftNavSection">
-                <div>
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="logo">vip</div>
+            <li class="dropdown">
+                <i class="fas fa-bars"></i>
             </li>
-            <li class="rightNavSection">
-                <div class="navButton">Moj Vip</div>
-                <div>
-                    <i class="fas fa-search"></i>
-                </div>
+            <li class="logo"><a href="">vip</a></li>
+
+            <li class="search">
+                <i class="fas fa-search"></i>
             </li>
+            <li class="navButton"><a href="">Moj Vip</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -45,16 +42,16 @@
 
             <div class="deviceSpecsOption">
                 <div class="gearIcon">
-                    <i class="fas fa-cog"></i>
+                    <a href="#characteristicsButton"><i class="fas fa-cog"></i></a>
                 </div>
             </div>
 
             <div id="deviceView">
                 <div class="leftPane">
-                    <div class="detailBox">Screen</div>
-                    <div class="detailBox">Cameras</div>
-                    <div class="detailBox disabled"></div>
-                    <div class="detailBox disabled"></div>
+                    <div class="detailBox" id="screenPrompt">Screen</div>
+                    <div class="detailBox disabled" id="screenDetails">6.8" /3340x1440</div>
+                    <div class="detailBox" id="cameraPrompt">Cameras</div>
+                    <div class="detailBox disabled" id="cameraDetails">12+12+16 MP / 10 MP</div>
                 </div>
 
                 <div class="device">
@@ -66,10 +63,10 @@
                 </div>
 
                 <div class="rightPane">
-                    <div class="detailBox">Memory</div>
-                    <div class="detailBox">Platform</div>
-                    <div class="detailBox disabled"></div>
-                    <div class="detailBox disabled"></div>
+                    <div class="detailBox" id="memoryPrompt">Memory</div>
+                    <div class="detailBox disabled" id="memoryDetails">Up to 512 GB</div>
+                    <div class="detailBox" id="platformPrompt">Platform</div>
+                    <div class="detailBox disabled" id="platformDetails">Octa-core / 12 GB</div>
                 </div>
             </div>
 
@@ -93,14 +90,47 @@
                     <div class="infoBox">Compare Device</div>
                 </div>
                 <div>
-                    <div class="infoBox">Characteristics</div>
+                    <div class="infoBox" id="characteristicsButton">Characteristics</div>
                 </div>
             </div>
-            <div id="specificationsList"></div>
+            <div id="specificationsList">
+                <div class="menu disabled" id="menu">
+                    <div class="viewSpecification" id="platformSpec">Platform</div>
+                    <div class="viewSpecification">Screen</div>
+                    <div class="viewSpecification">Camera</div>
+                    <div class="viewSpecification">Memory</div>
+                    <div class="viewSpecification">Sound</div>
+                    <div class="viewSpecification">Communication</div>
+                    <div class="viewSpecification">Battery</div>
+                    <div class="viewSpecification">Package Contents</div>
+                </div>
+
+                <div class="specView disabled" id="specView">
+                    <div class="tab">
+                        <div>Platform</div>
+                        <div id="closeTab">x</div>
+                    </div>
+                    <div class="specList">
+                        <div class="row">
+                            <div class="specPart">Operating System</div>
+                            <div class="partDesc">Bobdroid 101</div>
+                        </div>
+                        <div class="row">
+                            <div class="specPart">Processor</div>
+                            <div class="partDesc">Octa-Core (2 x 2.7Ghz + 2 x 2.4Ghz + 4 x 1.9 Ghz)</div>
+                        </div>
+                        <div class="row">
+                            <div class="specPart">RAM</div>
+                            <div class="partDesc">12 GB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="js/fontawesome.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
